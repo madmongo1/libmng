@@ -45,7 +45,7 @@ libmng_zlib.c
 libmng_zlib.h
 )
 
-add_library(mng ${SRC})
+add_library(mng STATIC ${SRC})
 
 set (sysincs)
 foreach (i ${CMAKE_INSTALL_PREFIX})
